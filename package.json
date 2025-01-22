@@ -14,7 +14,8 @@
   "author": "MIT",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "mongoose": "^8.9.5"
   },
   "devDependencies": {
     "concurrently": "^9.1.0",
