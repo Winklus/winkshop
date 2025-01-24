@@ -20,7 +20,7 @@ const reviewSchema = mongoose.Schema({
     require: true,
   }
 
-}{
+},{
   timestamps: true,
 })
 const productSchema = mongoose.Schema({
