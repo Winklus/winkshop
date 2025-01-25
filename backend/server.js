@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import { notFound, errorHandler } from "./middleWares/errorMiddleWare.js";
 dotenv.config()
 import connectDB from "./config/db.js";
 import productRoute from "./routers/productRoute.js";
@@ -15,6 +16,9 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRoute);
+app.use(notFound);
+app.use(errorHandler);
+
 
 
 
