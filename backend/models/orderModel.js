@@ -1,9 +1,9 @@
 import mongoose, { Types } from "mongoose";
 
 const orderSchema = mongoose.Schema({
-  User: {
+  user: {
     type: mongoose.Schema.Types.ObjectId,
-    require: true,
+    required: true,
     ref: "User",
   },
 
@@ -11,36 +11,36 @@ const orderSchema = mongoose.Schema({
     {
     name: {
       type: String,
-      require: true,
+      required: true,
     },
     qty: {
       type: Number,
-      require: true,
+      required: true,
     },
     image: {
       type: String,
-      require: true,
+      required: true,
     },
     price: {
       type: Number,
-      require: true,
+      required: true,
     },
     product: {
       type: mongoose.Schema.Types.ObjectId,
-      require: true,
+      required: true,
       ref: "Product",
     },
   }
 ],
   shippingAddress: {
-    address: { type: String, require: true },
-    city: { type: String, require: true },
-    postalCode: { type: String, require: true },
-    country: { type: String, require: true },
+    address: { type: String, required: true },
+    city: { type: String, required: true },
+    postalCode: { type: String, required: true },
+    country: { type: String, required: true },
   },
   paymentMethod: {
     type: String,
-    require: true,
+    required: true,
   },
   paymentResult: {
     id: {type: String},
@@ -50,7 +50,7 @@ const orderSchema = mongoose.Schema({
   },
   itemsPrice: {
     type: Number,
-    require: true,
+    required: true,
     default: 0.0,
   },
   taxPrice: {
@@ -70,7 +70,7 @@ const orderSchema = mongoose.Schema({
   },
   isPaid: {
     type: Boolean,
-    require: true,
+    required: true,
     default: false,
   },
   paidAt: {
@@ -78,14 +78,14 @@ const orderSchema = mongoose.Schema({
   }, 
   isDelivered: {
     type: Boolean,
-    require: true,
+    required: true,
     default: false,
   }, 
   deliveredAt: {
     type: Date,
   },
 },{
-  timestamp: true,
+  timestamps: true,
 });
 
 const Order = mongoose.model("Order", orderSchema);
