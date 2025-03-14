@@ -1,11 +1,14 @@
 import { Helmet } from 'react-helmet-async';
 
+
 const Meta = ({ title, description, keywords }) => {
   return (
     <Helmet>
+    <link rel="stylesheet" href="../assets/styles/bootstrap.custom.css" />
+    <link rel="stylesheet" href="../assets/styles/index.css" />
       <title>{title}</title>
-      <meta name='description' content={description} />
-      <meta name='keywords' content={keywords} />
+      <Meta name='description' content={description} />
+      <Meta name='keywords' content={keywords} />
     </Helmet>
   );
 };

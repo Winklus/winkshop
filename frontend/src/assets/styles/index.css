@@ -14,6 +14,7 @@ main {
 
 
 .navbar {
+    font-size: 1rem;
     padding: 0.70rem 0;
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.70rem;
@@ -30,8 +31,8 @@ main {
 }
 
 .rating-text {
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.6rem;
+  font-weight: 400;
   padding-left: 0.5rem;
 }
 
@@ -44,7 +45,7 @@ main {
 
 .product-image {
   width: 100%;
-  height: 220px;
+  height: 230px;
   object-fit: cover;
 }
 
@@ -58,7 +59,7 @@ table th {
 }
 
 .review h2 {
-  font-size: 24px;
+  font-size: 14px;
   background: #f4f4f4;
   padding: 10px;
   border: 1px solid #ddd;
@@ -83,19 +84,3 @@ table th {
   margin-top: 20px;
 }
 
-
-
-
-@media screen and (max-width: 768px) {
-  footer {
-    font-size: 14px;  /* Adjust the font size for smaller screens */
-  }
-
-  .product-image {
-    width: 100px;  /* Set a smaller size for product images */
-  }
-
-  .product-name {
-    font-size: 16px;  /* Make product name smaller on mobile */
-  }
-}
