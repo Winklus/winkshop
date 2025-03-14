@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 main {
@@ -66,4 +67,21 @@ table th {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 14px;  /* Adjust the font size for smaller screens */
+  }
+
+  .product-image {
+    width: 100px;  /* Set a smaller size for product images */
+  }
+
+  .product-name {
+    font-size: 16px;  /* Make product name smaller on mobile */
+  }
 }
