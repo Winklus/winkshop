@@ -2,13 +2,11 @@ html {
   font-size: 16px !important;
 }
 
-body {
+
   body {
-    font-size: 0.7rem;
+    font-size: 1rem;
     overflow-x: hidden;
   }
-  overflow-x: hidden;
-}
 
 main {
   min-height: 80vh;
@@ -16,9 +14,9 @@ main {
 
 
 .navbar {
-    padding: 0.70rem 0 !important;
-  --bs-navbar-padding-x: 0 !important;
-  --bs-navbar-padding-y: 0.70rem !important;
+    padding: 0.70rem 0;
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.70rem;
 }
 
 
