@@ -7,11 +7,8 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
   return (
     <footer className="text-white py-2">
-
         <Row className='ms-auto py-2' style={{backgroundColor: '#2e2e2e'}}>
-
            <Col className='d-flex' md={6}>
-
             <Col className="d-flex flex-row">
               <div className="d-flex justify-content-center align-items-center mb-2">
                 <FaEnvelope size={25} style={{backgroundColor: 'white', color: 'black', borderRadius: '50%', padding: '0.2rem'}} />
@@ -112,8 +109,7 @@ const Footer = () => {
           <Col md={4}>
             <h4>Download on</h4>
             <Row>
-            <Col className='d-flex flex-row' style={{backgroundColor: 'black', flexGrow: '1', flexShrink: '1',
-maxWidth: '40%',
+            <Col className='d-flex flex-row' style={{backgroundColor: 'black', flexGrow: '1', flexShrink: '1', maxWidth: '40%',
     padding: '0px 6px', borderRadius: '5px', marginRight: '1rem', }}>
               <div className="d-flex justify-content-center align-items-center mb-2" style={{ marginRight: '10px'}}>
                 <FaApple size={30} style={{backgroundColor: 'white', color: 'black', borderRadius: '50%', padding: '0.2rem'}} />
@@ -145,15 +141,13 @@ maxWidth: '40%',
             <span><FaInstagram size={30} /></span>
             <span><FaTwitter size={30} /></span>
             <span><FaYoutube size={30} /></span>
-
             </div>
           </Col>
             </Row>
 
           </Col>
-
-
         </Row>
+
 
         <Row style={{backgroundColor: '#0c0c0c'}}>
           <Col className='text-center mb-4'>

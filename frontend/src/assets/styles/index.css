@@ -1,11 +1,23 @@
+html {
+  font-size: 16px;
+}
+
 body {
   overflow-x: hidden;
-  font-size: 16px;
 }
 
 main {
   min-height: 80vh;
 }
+
+
+.navbar {
+    padding: 0.70rem 0 !important;
+  --bs-navbar-padding-x: 0 !important;
+  --bs-navbar-padding-y: 0.70rem !important;
+}
+
+
 
 .rating span {
   margin: 0.1rem;
