@@ -9,7 +9,7 @@ import {
   getTopProducts,
   createProductReview,
 } from "../controllers/productController.js";
-import { protect, admin } from "../middlewares/authMiddleware.js";
+import { protect, admin } from "../middleWares/authMiddleWare.js";
 
 // Route to get all products and create a product
 router.route("/")
